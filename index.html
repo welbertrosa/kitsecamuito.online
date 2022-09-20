@@ -54,715 +54,1584 @@
             </div>
 
             <!-- Termos de Uso e Política de Privacidade -->
-            <div class="text-white mt-4"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
+          <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat&family=Open+Sans&family=Oswald&display=swap" rel="stylesheet" />
+  <style>
+  .fb-comments{
+      background-color: white!important;
+     border:1px solid #e9ebee!important
+  }
+ table th {
+      padding: 2px !important;
+  }
+  td, table tbody tr{
+      background-color: #fff!important;
+  }
+    @media (max-width: 768px) {
+  .video-player {
+    width: 100%;
+    background: 0 0;
+  }
+  .video-player iframe {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: auto;
+  }
+  #frame {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: auto;
+  }
+}
+
+* {
+  font-family: helvetica, arial, sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+.mark-comments{
+  color: #365899;
+}
+.fb-comments {
+  border: 1px solid #e9ebee!important;
+  border-radius: 18px;
+  padding: 12px;
+  margin: auto;
+  position: relative;
+  color: #4267b2;
+}
+
+.fb-comments-header {
+  padding:  0;
+  border-bottom: 1px solid #e9ebee!important;
+}
+
+.fb-comments-header span {
+  color: #000;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.fb-comments-comment {
+  border: none!important;
+  padding: 0;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.fb-comments-reply-wrapper {
+  margin-left: 60px;
+  border-left: 1px dotted #e9ebee!important;
+  padding-left: 5px;
+}
+
+tr,
+td {
+  border: none!important;
+  margin: 0;
+}
+
+td {
+  padding: 2.5px;
+}
+
+tr {
+  padding: 2.5px 0;
+}
+
+.fb-comments-comment-img {
+  vertical-align: top;
+  width: 48px;
+  padding-right: 5px;
+}
+
+.fb-comments-comment-img img {
+    max-width: 48px;
+    max-height: 48px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.fb-comments-comment-name {
+  font-size: 0.85em;
+}
+
+.fb-comments-comment-name name {
+  color: #365899;
+  text-decoration: none!important;
+  font-weight: 700;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.fb-comments-comment-name name:hover {
+  text-decoration: underline!important;
+}
+
+.fb-comments-comment-name occupation {
+  color: #90949c!important;
+}
+
+.fb-comments-comment-text {
+font-weight: 300;
+  font-size: 0.9em;
+  color: #000;
+  border-radius: 21px;
+  background-color: #eaebef!important;
+  padding-left: 12px
+}
+.fb-comments-comment-actions{
+    padding: 0 2px !important;
+}
+.fb-comments-comment-actions like,
+.fb-comments-comment-actions reply {
+  font-size: 0.75em;
+  color: #4267b2;
+  text-decoration: none!important;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.fb-comments-comment-actions like.liked {
+  color: #90949c;
+}
+
+.fb-comments-comment-actions like:hover,
+.fb-comments-comment-actions reply:hover {
+  text-decoration: underline;
+}
+
+.fb-comments-comment-actions likes {
+  font-size: 13px;
+  background: url(https://segredosdaburguesia.com/wp-content/uploads/2021/10/likes.png);
+  background-repeat: no-repeat;
+  padding-left: 43px;
+  padding-right: 6px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  margin-top: -10px;
+  float: right;
+  background-color: #fff!important;
+  border: solid #eaebef;
+  border-radius: 19px;
+}
+
+.fb-comments-comment-actions date {
+  font-size: 0.75em;
+  color: #90949c;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.fb-comments-comment-actions date:hover {
+  text-decoration: underline;
+}
+
+.fb-comments-loadmore {
+  background: #4080ff!important;
+  border: 1px solid #4080ff!important;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 14px;
+  padding: 0.875em;
+  text-shadow: none;
+  width: 100%;
+  font-weight: 700;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.fb-reply-input {
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  width: 100%;
+  padding: 5px 7.5px;
+  font-size: 0.75em;
+  color: #000;
+  outline: none;
+}
+
+.fb-reply-input:hover,
+.fb-reply-button:hover {
+  outline: none;
+}
+
+.fb-reply-button {
+  background: #4080ff!important;
+  border: 1px solid #4080ff!important;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 0.75em;
+  padding: 5px 7.5px;
+  text-shadow: none;
+  width: 100%;
+  font-weight: 700;
+  cursor: hand;
+  cursor: pointer;
+  outline: none;
+}
+
+.bbtn {
+  width: 100%;
+  max-width: 449px;
+}
+
+@media (max-width: 768px) {
+  .video-player {
+    margin-top: 0 !important;
+  }
+}
+
+    header {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    h1 {
+      font-size: clamp(1.5em, 1em + 3vw, 2.5em);
+      text-transform: uppercase bold;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .a-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline;
+      color: #2e82bc; 
+      outline: 0; 
+      line-height: 1; 
+      text-align: center; 
+      position:relative!important; display: inline-block!important;
+      border-style: solid; 
+      width: 100%; padding-left: 0!important; padding-right: 0!important; 
+      margin-bottom: 10px; 
+      padding: 22px 44px; border-color: #ff5535; border-width: 0px; 
+      border-radius: 6px; 
+      background: linear-gradient(to bottom, #ff6600 0%, #ff5535 100%); 
+      box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); 
+      text-decoration: none!important;
+    }
+    .span-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      margin: 0; 
+      border: 0; 
+      font: inherit;
+      vertical-align: baseline;
+      display: block; 
+      position: relative; 
+      z-index: 1; 
+      padding: 0 15px; 
+      white-space: normal; 
+      font-size: 25px;
+      color: #ffffff; 
+      font-family: Oswald; 
+      font-weight: bold; 
+      text-shadow: #000000 0px 1px 0px;
+      text-decoration: none;
+    }
+    .span-btn2 {
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      padding: 0; border: 0;
+      font: inherit; 
+      vertical-align: baseline; 
+      display: block; 
+      position: relative;
+      z-index: 1; 
+      margin: .2em 0 -.5em; 
+      font-size: 15px; 
+      color: #f5e051; 
+      font-family: Cabin; 
+      font-weight: bold; 
+      font-style: italic;
+      text-shadow: #000000 0px 1px 0px;
+    }
+    .comment {
+      display: block; 
+      padding: 10px 0; 
+      line-height: 20px;
+    }
+    .span {
+      color: #365899; 
+      font-weight: bold;
+    }
+    .answer {
+      color: #444; 
+      -webkit-font-smoothing: antialiased;
+      margin: 0; 
+      padding: 0; 
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline; 
+      display: block; 
+      padding-top: 10px; 
+      line-height: 20px;
+      padding-left: 9px; 
+      border-left: 1px solid #E9EBEE; margin-left: 50px; padding-bottom: 0;
+    }
+    .classeNova {
+      color: #444; 
+      -webkit-font-smoothing: antialiased; 
+      margin: 0; 
+      padding: 0; 
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline;
+      font-family: Arial; 
+      background-color:
+      #F6F7F9!important;
+      font-size: 14px; 
+      padding-top: 20px;      
+    }
+    .paragrafo {
+      color: #444; 
+      font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+      line-height: 1.5em; 
+      margin: 0;
+      margin-left: 60px; 
+      margin-bottom: 0px;
+    }
+    .like {
+      font-size: 11px; color: #90949c;
+    }
+    .twenty1 {
+      font-weight: 700; 
+      border-bottom: 1px solid #E9EBEE; 
+      display: block; 
+      padding-bottom: 6px;
+    }
+    .imgComment {
+      width: 60px; 
+      height: 50px; 
+      float: left; 
+      padding-right: 10px;
+    }
+    .hide {
+      display: none;
+    }
+    .pirataria h3 {
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: 5px;
+    }
+    .pirataria b{
+      color: #FFC400;
+    }
+    .pirataria {
+      font-size: 12px;
+      text-align: justify;
+    }
+    footer {
+      background-color: black;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      color: white;
+    }
+    .cpy {
+      font-size: 12px;
+      margin: 37px 0px 20px 0px;
+    }
+    .links a {
+      font-size: 12px;
+      color: white;
+    }
+    .lucas{
+      font-size: 50px;
+      color: #020201;
+      text-shadow: 2px 2px 2px white;
+    }
+  </style>
+</head>
+<body>
+  <section class="comments py-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="fb-comments" style="margin-top: 5px;">
+            <div class="fb-comments-header">
+              <span>32 comentários</span>
+            </div>
+            <div class="fb-comments-wrapper" id="1">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" 
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/douglas_lopes-1.jpg"  width="48" height="48" alt="imagem 1"></td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+  
+                        <font class="fb-comments-comment-name">
+                          <name>Davi Marinho</name>
+                        </font>
+                        <br/>
+                        Nunca vi nada igual! Realmente eu consegui aumentar minha produtividade e meu desempenho e ativar algumas áreas do meu cérebro que nem sabia que existia...
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>31</likes>
+                      
+                      <date>27 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="2">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem 2"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/Sandra-1024x1024-1-1.jpg"></td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Marisa Moreira</name>
+                      </font>
+                      <br/> 
+                      <name class="mark-comments">Davi Marinho</name> Serio??funciona msmmm??
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>2</likes>
+                      
+                      <date>10 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="3">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem3"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/douglas_lopes-1.jpg"></td>
+                    
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Davi Marinho</name>
+                      </font>
+                      <br/>
+                      <name class="mark-comments">Marisa Moreira</name> Funciona sim! Hoje consigo ler mais rápido, acordar mais cedo e até meu desempenho aumentou
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>3</likes>
+                      
+                      <date>1 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-wrapper" id="4">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/nascimento.jpg"></td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Talisson Freire</name>
+                      </font>
+                      <br/>
+                      Eu já tinha tentado de tudo, literalmente kkk… Fui até num especialista pra tentar aumentar minha memória e foco. Mas esse método até agora foi o que mais deu resultado! (Pelo menos pra mim)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>27</likes>
+                      
+                      <date>53 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="5">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/Jose-oliveira-1.jpg"></td>
+                  
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Luciano Mendes</name>
+                      </font>
+                      <br/>
+                     <name class="mark-comments">Talisson Freire </name> Mas em quanto tempo você viu essa melhora?
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>5</likes>
+                      
+                      <date>42 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="6">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/nascimento.jpg"></td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+
+                      <font class="fb-comments-comment-name">
+                        <name>Talisson Freire</name>
+                      </font>
+                      <br/>
+
+                      <name class="mark-comments">  
+                        Luciano Mendes </name> Cara, nos primeiros 4 dias eu já senti um aumento gigantesco em umas coisas simples que eu tava fazendo… tipo coisas que eu precisava anotar e colocar despertador eu estava lembrando naturalmente. Mas eu não apliquei nem 10% ainda
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>7</likes>
+                      
+                      <date>33 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="7">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/Jose-oliveira-1.jpg"></td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Luciano Mendes</name>
+                      </font>
+                      <br/>
+                      <name class="mark-comments">  
+                        Talisson Freire </name>
+                        Vale a pena então... to com receio de comprar e não funcionar pra mim
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>5</likes>
+                      
+                      <date>27 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="8">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/nascimento.jpg"></td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Talisson Freire</name>
+                      </font>
+                      <br/>
+                      <name class="mark-comments">  
+                        Luciano Mendes</name>
+                        Vale sim, irmão. To curtindo demais…
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>3</likes>
+                      
+                      <date>25 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="9">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/Jose-oliveira-1.jpg"></td>
+                    
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Luciano Mendes</name>
+                      </font>
+                      <br/>
+                      <name class="mark-comments">Talisson Freire</name>
+                      Valeu! Vou comprar aqui!
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>3</likes>
+                      <date>1 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-wrapper" id="10">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/Jaime-1.jpg"></td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>David Oliveira </name>
+                      </font>
+                      <br/>
+                      Só digo uma coisa, podem ir sem medo!!! realmente funciona e muito.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>63</likes>
+                      
+                      <date>2 h</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-wrapper" id="11">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/Maria-Clara-Lourenco-1.jpg"></td>
+                 
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Mônica Tavares</name>
+                        <br/>
+                      </font>
+                      Tem gente que está me perguntando se realmente tem alguma fórmula mágica. Não é nada disso!  Você aprende algumas coisas simples de fazer que te ajudam e passa a perceber outras que te prejudicam. Eu por exemplo, consegui acordar mais cedo, ficar mais ativa no dia a dia e render muito mais, depois que eu comecei a colocar em prática as primeiras dicas
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>11</likes>
+                      
+                      <date>3 h</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-wrapper" id="12">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem perfil"
+                          src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/fernandes-1024x1024-1.jpg"></td>
+                   
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        <font class="fb-comments-comment-name">
+                          <name>Julia Fernandes</name>
+                        </font>
+                        <br/>
+                        Vou comprar!! Pelos comentários aqui todo mundo tá conseguindo melhorar, dps aviso vcs galera!
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>62</likes>
+                        <date>3 h</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="13">
+              <table class="fb-comments-comment">
+                <tbody>
+                <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/almeida.jpg"></td>
+                    
+                </tr>
+                <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Diego Nascimento</name>
+                    </font>
+                    <br/>
+                    <name class="mark-comments">
+                      Julia Fernandes
+                    </name>
+                    To na mesma… Curti demais, vou comprar tbm. Vou te chamar no privado pra gente ir conversando sobre o curso, pode ser?
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fb-comments-comment-actions">
+                    <like>Curtir</like>
+                    ·
+                    <reply>Responder</reply>
+                    ·
+                    <likes>7</likes>
+                    <date>2 h</date>
+                    </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="14">
+                <table class="fb-comments-comment">
+                    <tbody>
+                    <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                            src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/fernandes-1024x1024-1.jpg"></td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="fb-comments-comment-text">
+                          <font class="fb-comments-comment-name">
+                            <name>Julia Fernandes</name>
+                          </font>
+                        <br/>
+                        <name class="mark-comments">
+                          Diego Nascimento
+                        </name>
+                          Agradeço, mas meu marido é bem ciumento kkk sei que às vezes seria algo profissional, mas tem a turma do suporte lá pra ajudar
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>93</likes>
+                        <date>1 h</date>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="15">
+                <table class="fb-comments-comment">
+                    <tbody>
+                    <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                            src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/almeida.jpg"></td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="fb-comments-comment-text">
+                          <font class="fb-comments-comment-name">
+                            <name>Diego Nascimento</name>
+                        </font>
+                        <br/>
+                        <name class="mark-comments">
+                          Julia Fernandes
+                        </name>
+                        Tranquilo...
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <date>45 min</date>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="fb-comments-wrapper" id="16">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/Andreia-1.jpg"></td>
+                 
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Luiz Fernando Costa  </name>
+                      </font>
+                      <br/>
+                      Sei que não tem muito a ver, mas o método me ajudou a aumentar minha autoestima. Eu achava que tava sem disposição pq eu era fraco. Que nada! Eu descobri que não sabia aproveitar meu corpo ao máximo! Não poderia deixar de dar meu feedback. Tmjj!
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>23</likes>
+                      
+                      <date>3 h</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-wrapper" id="17">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/9.png"></td>
+                    
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Vinicius Pereira</name>
+                      </font>
+                      <br/>
+                      Ixii… Alguém que comprou sabe me dizer se da certo mesmo? 
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>46</likes>
+                      
+                      <date>4 h</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="18">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/4.png"></td>
+                    
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Patricia Amorim Santos</name>
+                      </font>
+                      <br/>
+                      <name class="mark-comments">
+                        Vinicius Pereira 
+                      </name>
+                      Eu também estou com o pé atrás… 
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes> 6</likes>
+                      <date>3 h</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="19">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/Joao-antonio.jpg"></td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>João Alberto</name>
+                      </font>
+                      <br/>
+                      <name class="mark-comments">
+                        Vinicius Pereira
+                      </name>
+                      Com tanta coisa ruim na internet, alguém que realmente fez sabe me informar? Não posso entrar em furada
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes> 6</likes>
+                      <date>3 h</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="20">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/Kensly-Cabral.jpg"></td>
+                    
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Juliana Cristina
+                        </name>
+                      </font>
+                      <br/>
+                      <name class="mark-comments">
+                        Vinicius Pereira
+                      </name>
+                      Meu irmão comprou e os pais da namorada dele também. Comecei tem uns 3 dias pra ver se era aquilo que eles falavam… Realmente estou sentindo a diferença kkk
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>21</likes>
+                      <date>3 h</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="21">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/Gabriel.jpg"></td>
+                    
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Matheus Veríssimo</name>
+                      </font>
+                      <br/>
+                      <name class="mark-comments">
+                        Vinicius Pereira
+                      </name>
+                      Não sou de acreditar nas coisas da internet, mas esse curso ouvi falar já. Só por isso to pensando em comprar
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>17</likes>
+                      <date>2 h</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="22">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                        src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/prova1.jpg"></td>
+                    
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Lucas Almeida
+                        </name>
+                      </font>
+                      <br/>
+                      <name class="mark-comments">
+                        Vinicius Pereira
+                      </name>
+                      Eu comprei semana passada. Eu também tava com o pé atrás antes de comprar, mas valeu cada centavo, irmão! Se tu aplicar o que eles ensinam e estiver fazendo algo rentável, tu recupera o investimento em pouco tempo. Boa sorte!
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>77</likes>
+                      <date>6 h</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="23">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                          src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/lima.jpeg"></td>
+                      
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        <font class="fb-comments-comment-name">
+                          <name>Ana Carolina Resende
+                          </name>
+                        </font>
+                        <br/>
+                        <name class="mark-comments">
+                            Lucas Almeida
+                        </name>
+                        Eu tbmmm, inclusive meu irmão comprou também e agora todo mundo aqui ta trabalhando de casa! Kkkkkk eu to fazendo pq vi meu irmão ganhando um dinheiro com isso
+  
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>23</likes>
+                        <date>5 h</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            <button class="fb-comments-loadmore" onclick="javascript:loadMore();">Carregar mais 8 comentários</button>
+            <div style="display:none" id="more">
+                <div class="fb-comments-wrapper" id="24">
+                    <table class="fb-comments-comment">
+                        <tbody>
+                        <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/prova2.jpg"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Maria Clara Abdala
+                                </name>
+                              </font>
+                              <br/>
+                              Eu já tinha comprado uns cursos pra aprender a ser mais produtiva, mas nenhum fala o que esse método falou. Os outros são só enrolação. Eles não escondem a verdade e tem um monte de coisa bem prática mesmo. Pelo preço vale muitíssimoo a pena!
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-actions">
+                            <like>Curtir</like>
+                            ·
+                            <reply>Responder</reply>
+                            ·
+                            <likes>73</likes>
+                            <date>6 h</date>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="fb-comments-wrapper" id="25">
+                    <table class="fb-comments-comment">
+                        <tbody>
+                        <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/Roberto.jpg"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Patrick de souza</name>
+                              </font>
+                              <br/>
+                              Olha, gente, eu me sinto na obrigação de falar isso. Muitas pessoas querem nos ver pra baixo e sentem inveja do nosso sucesso. É por causa de pessoas como o Dave que a gente pode ter esperanças de um mundo melhor. Não importa se ele ta ganhando algo com isso, realmente ele merece o reconhecimento pq não é qualquer pessoa que compartilha essas informações. Uma pena que pessoas que tem poder não veem vantagem nisso e acabam escondendo de todo mundo. Esse método é uma luz no fim do túnel pra quem quer atingir uma versão melhor de si mesmo.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-actions">
+                            <like>Curtir</like>
+                            ·
+                            <reply>Responder</reply>
+                            ·
+                            <likes>13</likes>
+                            <date>4 h</date>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="fb-comments-wrapper" id="26">
+                    <table class="fb-comments-comment">
+                        <tbody>
+                        <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/souza.jpeg"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Alana Lima
+                                </name>
+                            </font>
+                             <br/>
+                            
+                            Galera, fiz o pagamento em boleto e ainda não consegui acessar... estou ansiosa… Teve uma moça que me chamou aqui, achei bem profissional. Isso pq nem comecei ainda kkkk
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-actions">
+                            <like>Curtir</like>
+                            ·
+                            <reply>Responder</reply>
+                            ·
+                            <likes>32</likes>
+                            <date>2 h</date>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="fb-comments-reply-wrapper" id="27">
+                    <table class="fb-comments-comment">
+                        <tbody>
+                        <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/5.png"></td>
+                          
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Jhiullia Freire
+                                </name>
+                            </font>
+                            <br/>
+                            <name class="mark-comments">
+                                Alana Lima 
+                            </name>
+
+                            Eu paguei no cartão e tive o acesso na hr! Achei mais fácil até pq o preço é de boa! Experimentando aqui! To no segundo dia e já estou bem mais produtiva! Sem palavras! 100%!
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-actions">
+                            <like>Curtir</like>
+                            ·
+                            <reply>Responder</reply>
+                            ·
+                            <likes>109</likes>
+                            <date>11 h</date>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="fb-comments-reply-wrapper" id="28">
+                    <table class="fb-comments-comment">
+                        <tbody>
+                        <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/6.png"></td>
+                          
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Natália Martins
+
+                                </name>
+                            </font>
+                            <br/>
+                            <name class="mark-comments">
+                                Alana Lima 
+                            </name>
+                            Paguei no cartão e dividi em 12. Estava meio receosa, mas agora estou conseguindo me concentrar mais, trabalhar mais e como sou prestadora de serviço, minha renda tem aumentado. Pra mim tem sido sensacional!
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-actions">
+                            <like>Curtir</like>
+                            ·
+                            <reply>Responder</reply>
+                            ·
+                            <likes>115</likes>
+                            <date>12 h</date>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="fb-comments-wrapper" id="29">
+                    <table class="fb-comments-comment">
+                        <tbody>
+                        <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/7.png"></td>
+                           
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Ana Paula Novais</name>
+                            </font>
+                            <br/>
+                            Sem palavras!!!! 100%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-actions">
+                            <like>Curtir</like>
+                            ·
+                            <reply>Responder</reply>
+                            ·
+                            <likes>15</likes>
+                            <date>15 h</date>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="fb-comments-wrapper" id="30">
+                    <table class="fb-comments-comment">
+                        <tbody>
+                        <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/176151093_2841834979407640_3439015475335049722_n-1024x1024-1.jpeg"></td>
+                           
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Juliana Cristina
+                                </name>
+                            </font>
+                            <br/>
+                            Olhaa... eu posso dizer que existia uma Juliana antes e dps desse método. É incrível! Eu consigo trabalhar menos horas e produzir mto mais pq agora tenho uma concentração umas 10 vezes maior!!! 🙏🏼
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-actions">
+                            <like>Curtir</like>
+                            ·
+                            <reply>Responder</reply>
+                            ·
+                            <likes>192</likes>
+                            <date>16 h</date>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="fb-comments-wrapper" id="31">
+                    <table class="fb-comments-comment">
+                        <tbody>
+                        <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/Joao-Lucas-.jpeg"></td>
+                           
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Diego Nunes
+
+                                </name>
+                            </font>
+                            <br/>
+                            Vou comprar!! Pelos comentários aqui todo mundo ta conseguindo melhorar! Dps aviso vcs galera!!!
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-actions">
+                            <like>Curtir</like>
+                            ·
+                            <reply>Responder</reply>
+                            ·
+                            <likes>93</likes>
+                            <date>17 h</date>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="fb-comments-wrapper" id="32">
+                    <table class="fb-comments-comment">
+                        <tbody>
+                        <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/Leonardo-Lima-.jpeg"></td>
+                           
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Rodrigo Moraes
+
+
+                                </name>
+                            </font>
+                            <br/>
+                            Gente, funciona sim! Mas você tem que seguir o que eles ensinam. O meu problema era com cansaço. Parecia que quanto mais dormia, mais cansado ficava. Não sei qual dica em específico me ajudou mais, mas sem dúvidas fez a diferença pra mim
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fb-comments-comment-actions">
+                            <like>Curtir</like>
+                            ·
+                            <reply>Responder</reply>
+                            ·
+                            <likes>273</likes>
+                            <date>1 d</date>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-<div class="elementor-element elementor-element-7297d213 elementor-widget elementor-widget-image" data-id="7297d213" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="750" height="73" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/trtr-1024x100-1.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/trtr-1024x100-1.png 1024w, https://metodozerovarizes.com/wp-content/uploads/2022/04/trtr-1024x100-1-300x29.png 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/trtr-1024x100-1-768x75.png 768w" sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:9.77%;max-width:1024px" /> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-5835e2a2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5835e2a2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-background-overlay"></div>
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-662ec5e3" data-id="662ec5e3" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-widget-wrap elementor-element-populated">
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-7a5ab68b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7a5ab68b" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-a79a88e" data-id="a79a88e" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-6bbf9d4b elementor-widget elementor-widget-heading" data-id="6bbf9d4b" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">17 Comentários</h2> </div>
-</div>
-<div class="elementor-element elementor-element-50471c2e elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="50471c2e" data-element_type="widget" data-widget_type="divider.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.6.4 - 13-04-2022 */
-.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#2c2c2c;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);-ms-flex-negative:0;flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}</style> <div class="elementor-divider">
-<span class="elementor-divider-separator">
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-334abfbf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="334abfbf" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5adfa2b1" data-id="5adfa2b1" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-77466abb elementor-widget elementor-widget-image" data-id="77466abb" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="750" height="750" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-b5a98ec82e436c3f0f5eefae64eb8f0c-1024x1024.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-b5a98ec82e436c3f0f5eefae64eb8f0c.jpg 1024w, https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-b5a98ec82e436c3f0f5eefae64eb8f0c-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-b5a98ec82e436c3f0f5eefae64eb8f0c-150x150.jpg 150w, https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-b5a98ec82e436c3f0f5eefae64eb8f0c-768x768.jpg 768w" sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:100%;max-width:1024px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-32a6da04" data-id="32a6da04" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-52f8148b elementor-widget elementor-widget-heading" data-id="52f8148b" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Emilia Yager disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-11c84eb2 elementor-widget elementor-widget-text-editor" data-id="11c84eb2" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.6.4 - 13-04-2022 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style> <p><span class="JsGRdQ">Adorei, Recomendo!! Muito fácil o método Percebi melhoras significativas em poucos dias, em pouco tempo já da pra perceber a diferença. Estou indicando pra todas minhas amigas.</span> 😍😍😍</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-4b6a107f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4b6a107f" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-165a5264" data-id="165a5264" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-53cdc503 elementor-widget elementor-widget-text-editor" data-id="53cdc503" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 3 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-4daf9fde elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4daf9fde" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-50b1a97e" data-id="50b1a97e" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-6159fd76 elementor-widget elementor-widget-image" data-id="6159fd76" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="750" height="750" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-d82d5c52d047c15489a7e4fe0ccefece-1024x1024.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-d82d5c52d047c15489a7e4fe0ccefece.jpg 1024w, https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-d82d5c52d047c15489a7e4fe0ccefece-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-d82d5c52d047c15489a7e4fe0ccefece-150x150.jpg 150w, https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-d82d5c52d047c15489a7e4fe0ccefece-768x768.jpg 768w" sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:100%;max-width:1024px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-15789867" data-id="15789867" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-7ec3375f elementor-widget elementor-widget-heading" data-id="7ec3375f" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Juliana Aparecida disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-1328da9f elementor-widget elementor-widget-text-editor" data-id="1328da9f" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Confesso que não estava botando muita fé, mas resolvi fazer um teste e realmente vale a pena</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-7edd5f6f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7edd5f6f" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7aba3ec6" data-id="7aba3ec6" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-6c0ee1a elementor-widget elementor-widget-text-editor" data-id="6c0ee1a" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 4 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-5631688c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5631688c" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-df189d6" data-id="df189d6" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-54880421 elementor-widget elementor-widget-image" data-id="54880421" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="400" height="400" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/2.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/2.jpg 400w, https://metodozerovarizes.com/wp-content/uploads/2022/04/2-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/2-150x150.jpg 150w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;max-width:400px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4b9e39f6" data-id="4b9e39f6" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-2cf2149e elementor-widget elementor-widget-heading" data-id="2cf2149e" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Jaqueline do Rosário disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-55545550 elementor-widget elementor-widget-text-editor" data-id="55545550" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Nota 10 Super recomendo</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-61764a22 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="61764a22" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-61a2ae74" data-id="61a2ae74" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-6b8aba2e elementor-widget elementor-widget-text-editor" data-id="6b8aba2e" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 24 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-4dc01d8f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4dc01d8f" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-27265921" data-id="27265921" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-3858e557 elementor-widget elementor-widget-image" data-id="3858e557" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="400" height="400" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/1.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/1.jpg 400w, https://metodozerovarizes.com/wp-content/uploads/2022/04/1-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/1-150x150.jpg 150w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;max-width:400px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4c17a0a" data-id="4c17a0a" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-65a72cbe elementor-widget elementor-widget-heading" data-id="65a72cbe" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Rosana Almeida disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-4e552c8a elementor-widget elementor-widget-text-editor" data-id="4e552c8a" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Gostaria de saber mais sobre esse método</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-4bae7cf0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4bae7cf0" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3dfe3281" data-id="3dfe3281" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-453fc75d elementor-widget elementor-widget-text-editor" data-id="453fc75d" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 32 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-41aad756 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="41aad756" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4c88fef5" data-id="4c88fef5" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-77e3b0a0 elementor-widget elementor-widget-image" data-id="77e3b0a0" data-element_type="widget" data-widget_type="image.default">
- <div class="elementor-widget-container">
-<img width="400" height="400" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/3.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/3.jpg 400w, https://metodozerovarizes.com/wp-content/uploads/2022/04/3-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/3-150x150.jpg 150w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;max-width:400px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7b5b285f" data-id="7b5b285f" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-7d716929 elementor-widget elementor-widget-heading" data-id="7d716929" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Betina Carvalho disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-2df52277 elementor-widget elementor-widget-text-editor" data-id="2df52277" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p class="MsoNormal">Fiz o procedimento e meu Deeeus, estou chocada com a eficiência, estou fazendo pouco tempo e já estou percebendo como o método funciona. parece até brincadeira kkkkkkk estou arrasada</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-476f01b0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="476f01b0" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-14d8a5db" data-id="14d8a5db" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-2673981 elementor-widget elementor-widget-text-editor" data-id="2673981" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 44 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-4299a945 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4299a945" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-72f2129a" data-id="72f2129a" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-47ae9927 elementor-widget elementor-widget-image" data-id="47ae9927" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="750" height="750" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-6086fb614e18fdb2b96252182e1512c5-1024x1024.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-6086fb614e18fdb2b96252182e1512c5.jpg 1024w, https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-6086fb614e18fdb2b96252182e1512c5-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-6086fb614e18fdb2b96252182e1512c5-150x150.jpg 150w, https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-6086fb614e18fdb2b96252182e1512c5-768x768.jpg 768w" sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:100%;max-width:1024px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b0f865d" data-id="b0f865d" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-7ffa3326 elementor-widget elementor-widget-heading" data-id="7ffa3326" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Rose Amaral disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-2d32ddea elementor-widget elementor-widget-text-editor" data-id="2d32ddea" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Qual o valor?</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-322093e2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="322093e2" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-36d04f89" data-id="36d04f89" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-6a15b051 elementor-widget elementor-widget-text-editor" data-id="6a15b051" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 1 h</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-4b66f00c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4b66f00c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6d117fe1" data-id="6d117fe1" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-53bdbd1 elementor-widget elementor-widget-image" data-id="53bdbd1" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="750" height="750" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-e5f42467d1a6ce0d4f26e1c1a07bf04d-1024x1024.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-e5f42467d1a6ce0d4f26e1c1a07bf04d.jpg 1024w, https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-e5f42467d1a6ce0d4f26e1c1a07bf04d-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-e5f42467d1a6ce0d4f26e1c1a07bf04d-150x150.jpg 150w, https://metodozerovarizes.com/wp-content/uploads/2022/04/avatar-e5f42467d1a6ce0d4f26e1c1a07bf04d-768x768.jpg 768w" sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:100%;max-width:1024px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7e802a31" data-id="7e802a31" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-5581abf4 elementor-widget elementor-widget-heading" data-id="5581abf4" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Darci Macedo disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-365fd8f3 elementor-widget elementor-widget-text-editor" data-id="365fd8f3" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p class="MsoNormal">Adquiri por indicação de uma amiga que fez o passo a passo e na hora que vi o resultado dela não acreditei. vale muita a pena mesmo</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-27986b4d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="27986b4d" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-bdc9421" data-id="bdc9421" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-3518df8a elementor-widget elementor-widget-text-editor" data-id="3518df8a" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 1 h</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-541479b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="541479b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7ad1af62" data-id="7ad1af62" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-32fb4d9e elementor-widget elementor-widget-image" data-id="32fb4d9e" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="400" height="400" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/4.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/4.jpg 400w, https://metodozerovarizes.com/wp-content/uploads/2022/04/4-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/4-150x150.jpg 150w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;max-width:400px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-10cca0ca" data-id="10cca0ca" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-120e2a86 elementor-widget elementor-widget-heading" data-id="120e2a86" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Laura Rossi disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-50f56 elementor-widget elementor-widget-text-editor" data-id="50f56" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Comprei hoje e daqui uns tempos volto pra falar se é real mesmo</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-3af9bcc6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3af9bcc6" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7e2aeb7c" data-id="7e2aeb7c" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-4b5a2cfb elementor-widget elementor-widget-text-editor" data-id="4b5a2cfb" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 2d </p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-f14f936 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f14f936" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5466043b" data-id="5466043b" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-widget-wrap elementor-element-populated">
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-583b17a9" data-id="583b17a9" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-7089cbd0 elementor-widget elementor-widget-image" data-id="7089cbd0" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="400" height="400" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/5.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/5.jpg 400w, https://metodozerovarizes.com/wp-content/uploads/2022/04/5-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/5-150x150.jpg 150w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;max-width:400px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1c40f62e" data-id="1c40f62e" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-78f6c201 elementor-widget elementor-widget-heading" data-id="78f6c201" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Betina Carvalho disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-138d02f1 elementor-widget elementor-widget-text-editor" data-id="138d02f1" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>é bom mesmo?</p> </div>
-</div>
-<div class="elementor-element elementor-element-d9657b2 elementor-widget elementor-widget-text-editor" data-id="d9657b2" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 8h </p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-1967a0ad elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1967a0ad" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-6044e1af" data-id="6044e1af" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-widget-wrap elementor-element-populated">
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7efac02" data-id="7efac02" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-1805c463 elementor-widget elementor-widget-image" data-id="1805c463" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="400" height="400" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/4.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/4.jpg 400w, https://metodozerovarizes.com/wp-content/uploads/2022/04/4-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/4-150x150.jpg 150w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;max-width:400px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1e13da68" data-id="1e13da68" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-58292b9d elementor-widget elementor-widget-heading" data-id="58292b9d" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Laura Rossi disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-5f8e6682 elementor-widget elementor-widget-text-editor" data-id="5f8e6682" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p><span style="color: #000000; font-family: 'Open Sans', Arial, sans-serif; text-align: justify; background-color: #ffffff;">Sim, já estou percebendo que está melhorando aos poucos pode comprar que vale</span></p> </div>
-</div>
-<div class="elementor-element elementor-element-4241a5e7 elementor-widget elementor-widget-text-editor" data-id="4241a5e7" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 44 min </p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-3d8ecab9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3d8ecab9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-30c1f966" data-id="30c1f966" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-c94b7c elementor-widget elementor-widget-image" data-id="c94b7c" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="400" height="400" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/9.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/9.jpg 400w, https://metodozerovarizes.com/wp-content/uploads/2022/04/9-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/9-150x150.jpg 150w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;max-width:400px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6202a0b6" data-id="6202a0b6" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-5e037786 elementor-widget elementor-widget-heading" data-id="5e037786" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Maria Fernanda disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-77e09e8c elementor-widget elementor-widget-text-editor" data-id="77e09e8c" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Estava procurando uma forma de reduzir as varizes que estava com muita vergonha de ir na praia desse jeito e finalmente depois de tanto tempo consegui achar algo que me ajudou. muito obrigadoooo</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-439d553a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="439d553a" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-424ba86c" data-id="424ba86c" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-751ec920 elementor-widget elementor-widget-text-editor" data-id="751ec920" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 3h</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-94f987f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="94f987f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7d19b623" data-id="7d19b623" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-71e2f20e elementor-widget elementor-widget-image" data-id="71e2f20e" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="400" height="400" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/8.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/8.jpg 400w, https://metodozerovarizes.com/wp-content/uploads/2022/04/8-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/8-150x150.jpg 150w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;max-width:400px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1e27ec4a" data-id="1e27ec4a" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-6872cd2 elementor-widget elementor-widget-heading" data-id="6872cd2" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Viviane Lulu disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-63892f90 elementor-widget elementor-widget-text-editor" data-id="63892f90" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Perfeito 😍😍😍</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-3d00e5e2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3d00e5e2" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-6a5b2e2c" data-id="6a5b2e2c" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-6be59e2e elementor-widget elementor-widget-text-editor" data-id="6be59e2e" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 4h</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-d058b7a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d058b7a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-28de2e1e" data-id="28de2e1e" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-66b0d82d elementor-widget elementor-widget-image" data-id="66b0d82d" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="400" height="400" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/6.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/6.jpg 400w, https://metodozerovarizes.com/wp-content/uploads/2022/04/6-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/6-150x150.jpg 150w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;max-width:400px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6a86a44b" data-id="6a86a44b" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-416a0222 elementor-widget elementor-widget-heading" data-id="416a0222" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Vilma Luciana disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-2c387230 elementor-widget elementor-widget-text-editor" data-id="2c387230" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p class="MsoNormal">Sei nao, acho que isso pode ser uma cilada… e se eu gastar dinheiro e não dar certo?</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-3c622d71 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3c622d71" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-6e401a7" data-id="6e401a7" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-7099b9ed elementor-widget elementor-widget-text-editor" data-id="7099b9ed" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 1d</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-230ee895 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="230ee895" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-75ec1adb" data-id="75ec1adb" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-widget-wrap elementor-element-populated">
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1275822c" data-id="1275822c" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-2b5fd3ca elementor-widget elementor-widget-image" data-id="2b5fd3ca" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="400" height="400" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/7.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/7.jpg 400w, https://metodozerovarizes.com/wp-content/uploads/2022/04/7-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/7-150x150.jpg 150w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;max-width:400px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-6a400b08" data-id="6a400b08" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-2a65a7b4 elementor-widget elementor-widget-heading" data-id="2a65a7b4" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Luciana Silva disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-86aa83a elementor-widget elementor-widget-text-editor" data-id="86aa83a" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Eu pensava a mesma coisa, mas funciona. Comprei o método e agora sou uma mulher incrível incrível!</p> </div>
-</div>
-<div class="elementor-element elementor-element-105426c5 elementor-widget elementor-widget-text-editor" data-id="105426c5" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 2 h</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-580242e8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="580242e8" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4b489f4a" data-id="4b489f4a" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-widget-wrap elementor-element-populated">
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1707c1b" data-id="1707c1b" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-1e0fd570 elementor-widget elementor-widget-image" data-id="1e0fd570" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="400" height="400" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/6.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/6.jpg 400w, https://metodozerovarizes.com/wp-content/uploads/2022/04/6-300x300.jpg 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/6-150x150.jpg 150w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;max-width:400px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3542b66" data-id="3542b66" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-68e658fc elementor-widget elementor-widget-heading" data-id="68e658fc" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Vilma Luciana disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-5f0c6db4 elementor-widget elementor-widget-text-editor" data-id="5f0c6db4" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Muito obrigada pelo comentário, vou fazer a compra agora mesmo 😀</p> </div>
-</div>
-<div class="elementor-element elementor-element-138f3888 elementor-widget elementor-widget-text-editor" data-id="138f3888" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 11 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-70865e6b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="70865e6b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-55418dcf" data-id="55418dcf" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-54377c80 elementor-widget elementor-widget-image" data-id="54377c80" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="400" height="400" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/11.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/11.png 400w, https://metodozerovarizes.com/wp-content/uploads/2022/04/11-300x300.png 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/11-150x150.png 150w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;max-width:400px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-793cb1b7" data-id="793cb1b7" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-ff439c0 elementor-widget elementor-widget-heading" data-id="ff439c0" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Fernanda Rocha disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-1018868 elementor-widget elementor-widget-text-editor" data-id="1018868" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>o produto parece ser bom mesmo, até agora não vi comentários negativos</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-5bc91601 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5bc91601" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3d228004" data-id="3d228004" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-85438c elementor-widget elementor-widget-text-editor" data-id="85438c" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 7 h</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-38b00c93 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="38b00c93" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6f457554" data-id="6f457554" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-6d5502e1 elementor-widget elementor-widget-image" data-id="6d5502e1" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="400" height="400" src="https://metodozerovarizes.com/wp-content/uploads/2022/04/10.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://metodozerovarizes.com/wp-content/uploads/2022/04/10.png 400w, https://metodozerovarizes.com/wp-content/uploads/2022/04/10-300x300.png 300w, https://metodozerovarizes.com/wp-content/uploads/2022/04/10-150x150.png 150w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:100%;max-width:400px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-285de5a4" data-id="285de5a4" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-302d3cad elementor-widget elementor-widget-heading" data-id="302d3cad" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Mariana Mendes disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-793a1b0b elementor-widget elementor-widget-text-editor" data-id="793a1b0b" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Vou comprar pra ver se realmente funciona</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-72d007c3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="72d007c3" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-55e4f293" data-id="55e4f293" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-1fce43ec elementor-widget elementor-widget-text-editor" data-id="1fce43ec" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 12 h</p> </div>
-</div>
-<div class="elementor-element elementor-element-c67692a elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="c67692a" data-element_type="widget" data-widget_type="divider.default">
-<div class="elementor-widget-container">
-<div class="elementor-divider">
-<span class="elementor-divider-separator">
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-33b21571 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="33b21571" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-598608b5" data-id="598608b5" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-30fb40de elementor-view-default elementor-widget elementor-widget-icon" data-id="30fb40de" data-element_type="widget" data-widget_type="icon.default">
-<div class="elementor-widget-container">
-<div class="elementor-icon-wrapper">
-<div class="elementor-icon">
-<i aria-hidden="true" class="fab fa-facebook-square"></i> </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1a3c50ec" data-id="1a3c50ec" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-676e31a1 elementor-widget elementor-widget-text-editor" data-id="676e31a1" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Plug-in social do Facebook</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-1bcbc9ac elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1bcbc9ac" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-805d3b6" data-id="805d3b6" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-2404dd70 elementor-widget elementor-widget-text-editor" data-id="2404dd70" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>A compra desse método só pode ser realizada através deste site. Qualquer outro site onde você encontre este produto é uma FALSIFICAÇÃO e vai contra as leis. Evite falsificações e recuse produtos ilegais ou pirateados. NÃO adquira produtos parecidos e que não são baseados em anos de estudo na área de emagrecimento saudável. Não nos responsabilizamos por compras realizadas em outros sites.</p> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1bd2b926" data-id="1bd2b926" data-element_type="column">
-<div class="elementor-widget-wrap">
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-72b59375 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="72b59375" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1b4b8a7c" data-id="1b4b8a7c" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-30e4b693 elementor-widget elementor-widget-text-editor" data-id="30e4b693" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p><strong>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.</strong> Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais. Nós não vendemos o seu e-mail ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se à vontade para usar o link de contato e falar conosco em horário comercial de Segunda a Sextas das 09h00 ás 18h00. Lemos e respondemos todas as mensagens por ordem de chegada</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
+    </div>
+  </section>
+  
+  <script>
+  function showBtn1 () {
+      document.getElementById("btn1").classList.remove("hide")
+    }
+    
+    
+  function loadMore() {
+    $('#more').show()
+    $('.fb-comments-loadmore').hide().remove()
+}
+$(document).ready(function() {
+    $('date').each(function() {
+        if ($(this).attr('data-date-minus')) {
+            $(this).html(dateMinus($(this).attr('data-date-minus')))
+        }
+    })
+})
 
-    <script type="text/javascript">
-      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none")}, 1637000); // temporização da Call to Action (em milissegundos)
-    </script>
+function dateMinus(what) {
+    var today = Date.now()
+    var nw = today - what * 10000
+    var newd = new Date()
+    newd.setTime(nw)
+    var mthName = ['Janeiro', 'Fevereiro', 'MarÃ§o', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+    var mthNm = mthName[newd.getMonth()]
+    return (newd.getDate() +
+        ' de ' +
+        mthNm +
+        ' de ' +
+        newd.getFullYear() +
+        ' ' +
+        newd.getHours() +
+        ':' +
+        round(newd.getMinutes()))
+}
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="./assets/js/com.js"></script>
-  </body>
-</html>
+function round(what) {
+    if (what < 10) {
+        return '0' + what
+    } else {
+        return what
+    }
+}
+$('like').on('click', function() {
+    if ($(this).hasClass('liked')) {
+        $(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').find('likes').text(parseInt($(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').find('likes').text()) - 1)
+        $(this).removeClass('liked')
+        $(this).text('Curtir')
+    } else {
+        $(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').find('likes').text(parseInt($(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').find('likes').text()) + 1)
+        $(this).addClass('liked')
+        $(this).text('Descurtir')
+    }
+})
+$('reply').on('click', function() {
+    if (fbobj != null) {
+        handleReply($(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').attr('id'))
+    } else {
+        logInWithFacebook(handleReply, $(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').attr('id'))
+    }
+})
+
+function handleReply(id) {
+    var text = ''
+    var obj = $('#' + id)
+    if (obj.hasClass('fb-comments-reply-wrapper')) {
+        text = '@' + obj.find('name').text()
+        obj = $('#' + id.split('-')[0])
+    }
+    obj.find('.row.reply-box').remove()
+    obj.append('<div class="row reply-box" id="reply-' +
+        obj.attr('id') +
+        '"><div class="col-xs-10"><input type="text" value="' +
+        text +
+        '" placeholder="AÃ±ade una respuesta..." class="fb-reply-input" /></div><div class="col-xs-2"><button class="fb-reply-button" onclick="javascript:postReply(' +
+        obj.attr('id') +
+        ');">Responder</button></div></div>')
+}
+
+function postReply(id) {
+    var obj = $('#reply-' + id)
+    if (obj && obj.find('.fb-reply-input').val()) {
+        var date = new Date()
+        var fbreply = {
+            forid: id,
+            date: date,
+            text: obj.find('.fb-reply-input').val()
+        }
+        fbreplies.push(fbreply)
+        var replyc = reply.clone()
+        replyc.attr('id', id + '-' + Math.floor(Math.random() * 100 + 10))
+        replyc.find('name').text(fbobj.name)
+        replyc.find('.fb-comments-comment-img').find('img').attr('src', fbobj.pictureURL)
+        replyc.find('.fb-comments-comment-text').text(obj.find('.fb-reply-input').val())
+        replyc.find('date').each(function() {
+            if ($(this).attr('data-date-minus')) {
+                $(this).html(dateMinus($(this).attr('data-date-minus')))
+            }
+        })
+        $('#' + id).after(replyc)
+        obj.remove()
+        var today = new Date()
+        today.setDate(today.getFullYear() + 1)
+        setCookie('fbreplies', JSON.stringify(fbreplies), today)
+    }
+}
+
+</script>
+</body>
+</html>     </div>
+                </div>
+                    </div>
+        </div>
+                            </div>
+        </section>
+
